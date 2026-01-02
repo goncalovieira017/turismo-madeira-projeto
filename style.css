@@ -1,0 +1,110 @@
+
+:root {
+    
+    --cor-primaria: #0EA5E9; 
+    --cor-escura: #0F172A;   
+    --cor-acento: #F59E0B;   
+    --cor-fundo: #F8FAFC;    
+    
+   
+    --gap-grid: 1.5rem;
+}
+
+
+.dark:root {
+    --cor-fundo: #0F172A;
+    --cor-texto: #F1F5F9;
+}
+
+
+   
+.grid-layout-avancado {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--gap-grid);
+}
+
+
+.card-subgrid {
+    display: grid;
+    
+    grid-template-rows: subgrid;
+    /
+    grid-row: span 3; 
+    gap: 0;
+}
+
+
+.container-pai {
+    
+    container-type: inline-size;
+    container-name: cartao-flexivel;
+}
+
+
+@container cartao-flexivel (min-width: 400px) {
+    .elemento-filho {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .elemento-filho img {
+        width: 40%; 
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+body {
+    timeline-scope: --scroll-timeline;
+}
+
+
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--cor-acento); 
+    transform-origin: 0 50%;
+    transform: scaleX(0); 
+    z-index: 9999;
+    
+    /
+    animation: progresso-leitura linear;
+    animation-timeline: scroll();
+}
+
+@keyframes progresso-leitura {
+    to { transform: scaleX(1); }
+}
+
+
+.input-validacao {
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+
+.input-validacao:user-valid {
+    border-color: #22c55e; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%2322c55e' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 12.75l6 6 9-13.5' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.2rem;
+}
+
+.input-validacao:user-invalid {
+    border-color: #ef4444; 
+}
+
+
+.texto-sombra {
+    text-shadow: 2px 2px 0px var(--cor-primaria);
+}

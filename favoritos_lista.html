@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Favoritos - Visit Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#0EA5E9', dark: '#0F172A', accent: '#F59E0B', light: '#F8FAFC' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
+    
+    <div class="flex h-screen w-full">
+
+        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
+            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+                    VISIT<span class="text-brand-blue">MADEIRA</span>
+                </div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
+                <div><a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">Início (Dashboard)</a></div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
+                    <ul class="space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Dados Pessoais</a></li>
+                        <li><a href="geral_privacidade.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Privacidade</a></li>
+                        <li><a href="geral_ajuda.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3>
+                    <ul class="space-y-1">
+                        <li><a href="lugares_principais.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Principais Atrações</a></li>
+                        <li><a href="lugares_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte</a></li>
+                        <li><a href="lugares_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul</a></li>
+                        <li><a href="lugares_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo</a></li>
+                        <li><a href="lugares_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3>
+                    <ul class="space-y-1">
+                        <li><a href="fazer_melhores.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores Experiências</a></li>
+                        <li><a href="fazer_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte (Ativ.)</a></li>
+                        <li><a href="fazer_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul (Ativ.)</a></li>
+                        <li><a href="fazer_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo (Ativ.)</a></li>
+                        <li><a href="fazer_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital (Ativ.)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3>
+                    <ul class="space-y-1">
+                        <li><a href="insp_tendencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Tendências</a></li>
+                        <li><a href="insp_lugares.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores lugares</a></li>
+                        <li><a href="insp_festas.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Festas e Arraiais</a></li>
+                        <li><a href="insp_gastronomia.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Gastronomia</a></li>
+                        <li><a href="insp_trilhos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Trilhos e levadas</a></li>
+                        <li><a href="insp_natureza.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Natureza</a></li>
+                        <li><a href="insp_cultura.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Cultura</a></li>
+                        <li><a href="insp_desportos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Desportos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3>
+                    <ul class="space-y-1">
+                        <li><a href="carrinho_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Carrinho de Compras</a></li>
+                        
+                        <li><a href="favoritos_lista.html" class="block px-3 py-2 bg-brand-blue/10 text-brand-blue font-bold rounded-md">Favoritos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3>
+                    <ul class="space-y-1">
+                        <li><a href="componentes.html" class="block px-3 py-2 text-sm text-brand-blue bg-blue-50 border border-blue-100 rounded-md font-medium">Ver Caderno Estilos</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
+                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
+                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900">
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0">
+                <h2 class="text-xl font-bold text-slate-800 dark:text-white">Meus Favoritos ❤️</h2>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-8">
+                
+                <div class="max-w-6xl mx-auto space-y-4">
+                    
+                    <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col md:flex-row gap-4 items-center">
+                        <div class="w-full md:w-32 h-32 bg-gray-200 rounded-lg flex-shrink-0 overflow-hidden relative">
+                            <img src="https://images.winalist.com/blog/wp-content/uploads/2025/03/22071624/adobestock-1205443701-1500x1001.jpeg" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs -z-10">PICO ARIEIRO</div>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white">Pico do Arieiro</h3>
+                            <p class="text-sm text-slate-500">Inspiração • Melhores Lugares</p>
+                            <p class="text-sm text-slate-400 mt-2">Um dos picos mais altos da ilha, acessível de carro. Vista incrível.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="px-4 py-2 bg-brand-blue text-white rounded-lg hover:bg-sky-600 text-sm font-bold">Ver Local</button>
+                            <button class="px-4 py-2 border border-slate-200 dark:border-slate-600 text-red-500 rounded-lg hover:bg-red-50 dark:hover:bg-slate-700">Remover</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col md:flex-row gap-4 items-center">
+                        <div class="w-full md:w-32 h-32 bg-gray-200 rounded-lg flex-shrink-0 overflow-hidden relative">
+                            <img src="https://adventuremadeira.com/templates/yootheme/cache/de/skywalk-and-%20porto-moniz-volcanic-lava-pools-04-de62273f.jpeg" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs -z-10">PISCINAS</div>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white">Piscinas Porto Moniz</h3>
+                            <p class="text-sm text-slate-500">Atividade • Costa Norte</p>
+                            <p class="text-sm text-slate-400 mt-2">Bilhete diário para o complexo balnear.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-bold">🛒 Adicionar (3€)</button>
+                            <button class="px-4 py-2 border border-slate-200 dark:border-slate-600 text-red-500 rounded-lg hover:bg-red-50 dark:hover:bg-slate-700">Remover</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col md:flex-row gap-4 items-center">
+                        <div class="w-full md:w-32 h-32 bg-gray-200 rounded-lg flex-shrink-0 overflow-hidden relative">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Levada_Madeira.jpg" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs -z-10">LEVADA</div>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white">Levada das 25 Fontes</h3>
+                            <p class="text-sm text-slate-500">Atividade • Costa Norte</p>
+                            <p class="text-sm text-slate-400 mt-2">Caminhada guiada com transfer.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-bold">🛒 Adicionar (35€)</button>
+                            <button class="px-4 py-2 border border-slate-200 dark:border-slate-600 text-red-500 rounded-lg hover:bg-red-50 dark:hover:bg-slate-700">Remover</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

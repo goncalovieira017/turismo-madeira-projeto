@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura e Tradições - Visit Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#0EA5E9', dark: '#0F172A', accent: '#F59E0B', light: '#F8FAFC' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
+    
+    <div class="flex h-screen w-full">
+
+        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
+            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+                    VISIT<span class="text-brand-blue">MADEIRA</span>
+                </div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
+                <div><a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">Início (Dashboard)</a></div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
+                    <ul class="space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Dados Pessoais</a></li>
+                        <li><a href="geral_privacidade.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Privacidade</a></li>
+                        <li><a href="geral_ajuda.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3>
+                    <ul class="space-y-1">
+                        <li><a href="lugares_principais.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Principais Atrações</a></li>
+                        <li><a href="lugares_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte</a></li>
+                        <li><a href="lugares_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul</a></li>
+                        <li><a href="lugares_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo</a></li>
+                        <li><a href="lugares_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3>
+                    <ul class="space-y-1">
+                        <li><a href="fazer_melhores.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores Experiências</a></li>
+                        <li><a href="fazer_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte (Ativ.)</a></li>
+                        <li><a href="fazer_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul (Ativ.)</a></li>
+                        <li><a href="fazer_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo (Ativ.)</a></li>
+                        <li><a href="fazer_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital (Ativ.)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3>
+                    <ul class="space-y-1">
+                        <li><a href="insp_tendencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Tendências</a></li>
+                        <li><a href="insp_lugares.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores lugares</a></li>
+                        <li><a href="insp_festas.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Festas e Arraiais</a></li>
+                        <li><a href="insp_gastronomia.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Gastronomia</a></li>
+                        <li><a href="insp_trilhos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Trilhos e levadas</a></li>
+                        <li><a href="insp_natureza.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Natureza</a></li>
+                        
+                        <li><a href="insp_cultura.html" class="block px-3 py-2 bg-brand-blue/10 text-brand-blue font-bold rounded-md">Cultura</a></li>
+                        
+                        <li><a href="insp_desportos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Desportos</a></li>
+                    </ul>
+                </div>
+
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3><ul class="space-y-1"><li><a href="carrinho_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Carrinho</a></li><li><a href="favoritos_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Favoritos</a></li></ul></div>
+                <div><h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3><ul class="space-y-1"><li><a href="componentes.html" class="block px-3 py-2 text-sm text-brand-blue bg-blue-50 border border-blue-100 rounded-md font-medium">Ver Caderno Estilos</a></li></ul></div>
+            </nav>
+
+            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
+                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
+                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900">
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0">
+                <h2 class="text-xl font-bold text-slate-800 dark:text-white">Cultura e Tradições</h2>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-8">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col">
+                        <div class="h-48 bg-gray-200 relative">
+                            <img src="https://www.carreirosdomonte.com/v3/resources/images/aboutusimg.jpg?fit=638%2C512&ssl=1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold -z-10">FOTO: CESTOS</div>
+                            <span class="absolute top-3 left-3 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">TRADIÇÃO</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Carros de Cesto do Monte</h3>
+                            <p class="text-sm text-slate-500 mb-4">A descida mais famosa da ilha. Carros de vime controlados por dois "carreiros" vestidos de branco.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col">
+                        <div class="h-48 bg-gray-200 relative">
+                            <img src="https://www.parquetematicodamadeira.pt/uploads/1/0/5/4/10544727/dsc02003.jpg" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold -z-10">FOTO: BORDADO</div>
+                            <span class="absolute top-3 left-3 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">ARTESANATO</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Bordado Madeira</h3>
+                            <p class="text-sm text-slate-500 mb-4">Arte secular feita à mão. Toalhas e lençóis de luxo reconhecidos e exportados para todo o mundo.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col">
+                        <div class="h-48 bg-gray-200 relative">
+                            <img src="https://i0.wp.com/viajarmagazine.com.pt/wp-content/uploads/2025/01/Grupos-de-Folclore-%C2%A9Francisco-Correia.jpg?fit=1396%2C932&ssl=1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold -z-10">FOTO: BAILINHO</div>
+                            <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">MÚSICA</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Bailinho da Madeira</h3>
+                            <p class="text-sm text-slate-500 mb-4">A dança folclórica típica. Os dançarinos usam trajes regionais e o famoso instrumento "brinquinho".</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col">
+                        <div class="h-48 bg-gray-200 relative">
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/192277934.jpg?k=820e13029cf123d723a7c2c2ae13c3ef115a8162960a220c16103decab608f12&o=" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold -z-10">FOTO: SANTANA</div>
+                            <span class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">ARQUITETURA</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Casas Típicas de Santana</h3>
+                            <p class="text-sm text-slate-500 mb-4">As famosas casas triangulares com telhado de colmo, um símbolo postal da ilha.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col">
+                        <div class="h-48 bg-gray-200 relative">
+                            <img src="https://thumbs.dreamstime.com/b/cestas-de-vime-na-venda-em-uma-loja-da-f%C3%A1brica-camacha-ilha-madeira-portugal-abril-133550812.jpg" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold -z-10">FOTO: VIME</div>
+                            <span class="absolute top-3 left-3 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded">ARTESANATO</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Obras em Vime</h3>
+                            <p class="text-sm text-slate-500 mb-4">A tradição da Camacha. Cestos, móveis e os próprios carros do Monte são feitos entrelaçando varas de vime.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col">
+                        <div class="h-48 bg-gray-200 relative">
+                            <img src="https://visitmadeira.com/media/fhqjkn1g/mercado-dos-lavradores1-digitaltravelcouple.jpg?width=1920&height=1080&rnd=133343389493700000" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold -z-10">FOTO: MERCADO</div>
+                            <span class="absolute top-3 left-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">VIDA LOCAL</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Mercado dos Lavradores</h3>
+                            <p class="text-sm text-slate-500 mb-4">Cores, cheiros e tradição. As vendedoras de flores usam o traje típico e vendem frutas exóticas.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

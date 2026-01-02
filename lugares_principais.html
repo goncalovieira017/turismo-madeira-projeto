@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais Atrações - Visit Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#0EA5E9', dark: '#0F172A', accent: '#F59E0B', light: '#F8FAFC' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
+    
+    <div class="flex h-screen w-full">
+
+        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
+            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+                    VISIT<span class="text-brand-blue">MADEIRA</span>
+                </div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
+                
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">
+                        Início (Dashboard)
+                    </a>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
+                    <ul class="space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Dados Pessoais</a></li>
+                        <li><a href="geral_privacidade.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Privacidade</a></li>
+                        <li><a href="geral_ajuda.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3>
+                    <ul class="space-y-1">
+                        <li><a href="lugares_principais.html" class="block px-3 py-1.5 rounded-md bg-brand-blue/10 text-brand-blue font-bold">Principais Atrações</a></li>
+                        <li><a href="lugares_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Costa Norte</a></li>
+                        <li><a href="lugares_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Costa Sul</a></li>
+                        <li><a href="lugares_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Porto Santo</a></li>
+                        <li><a href="lugares_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Capital</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3>
+                    <ul class="space-y-1">
+                        <li><a href="fazer_melhores.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Melhores Experiências</a></li>
+                        <li><a href="fazer_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Costa Norte (Ativ.)</a></li>
+                        <li><a href="fazer_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Costa Sul (Ativ.)</a></li>
+                        <li><a href="fazer_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Porto Santo (Ativ.)</a></li>
+                        <li><a href="fazer_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Capital (Ativ.)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3>
+                    <ul class="space-y-1">
+                        <li><a href="insp_tendencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Tendências</a></li>
+                        <li><a href="insp_lugares.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Melhores lugares</a></li>
+                        <li><a href="insp_festas.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Festas e Arraiais</a></li>
+                        <li><a href="insp_gastronomia.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Gastronomia</a></li>
+                        <li><a href="insp_trilhos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Trilhos e levadas</a></li>
+                        <li><a href="insp_natureza.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Natureza</a></li>
+                        <li><a href="insp_cultura.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Cultura</a></li>
+                        <li><a href="insp_desportos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Desportos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3>
+                    <ul class="space-y-1">
+                        <li><a href="carrinho_lista.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Carrinho de Compras</a></li>
+                        <li><a href="favoritos_lista.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Favoritos</a></li>
+                        <li><a href="notif_updates.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Notificações</a></li>
+                        <li><a href="roteiro_realizar.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700">Meu Roteiro</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3>
+                    <ul class="space-y-1">
+                        <li><a href="componentes.html" class="block px-3 py-1.5 rounded-md bg-blue-50 text-brand-blue border border-blue-100 font-bold">Ver Caderno Estilos</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
+                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
+                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900">
+            
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0">
+                <h2 class="text-xl font-bold text-slate-800 dark:text-white">Principais Atrações</h2>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-8">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group hover:shadow-md transition-all">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://lirp.cdn-website.com/13b42811/dms3rep/multi/opt/7b72f7c2-e8c2-4f72-bfb7-89491f3e68a9-640w.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Golfinhos">
+                            <span class="absolute top-3 right-3 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Capital</span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Catamarã Golfinhos</h3>
+                            <p class="text-sm text-slate-500 mb-4">Passeio de observação de cetáceos.</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span class="text-brand-blue font-bold">Desde 30€</span>
+                                <a href="fazer_capital.html" class="text-sm bg-brand-blue text-white px-3 py-2 rounded-lg hover:bg-sky-600">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group hover:shadow-md transition-all">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://visit.funchal.pt/wp-content/uploads/2022/01/Leonor-S-7-1030x687.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Funchal">
+                            <span class="absolute top-3 right-3 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Capital</span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Tour no Funchal</h3>
+                            <p class="text-sm text-slate-500 mb-4">Visita guiada ao Mercado e Zona Velha.</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span class="text-brand-blue font-bold">Desde 18€</span>
+                                <a href="fazer_capital.html" class="text-sm bg-brand-blue text-white px-3 py-2 rounded-lg hover:bg-sky-600">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group hover:shadow-md transition-all">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://adventuremadeira.com/templates/yootheme/cache/de/skywalk-and-%20porto-moniz-volcanic-lava-pools-04-de62273f.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Piscinas">
+                            <span class="absolute top-3 right-3 bg-emerald-500 text-white text-xs font-bold px-2 py-1 rounded">Costa Norte</span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Piscinas Porto Moniz</h3>
+                            <p class="text-sm text-slate-500 mb-4">Nadar nas rochas vulcânicas naturais.</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span class="text-brand-blue font-bold">Desde 3€</span>
+                                <a href="fazer_norte.html" class="text-sm bg-brand-blue text-white px-3 py-2 rounded-lg hover:bg-sky-600">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group hover:shadow-md transition-all">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Levada_Madeira.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Levada">
+                            <span class="absolute top-3 right-3 bg-emerald-500 text-white text-xs font-bold px-2 py-1 rounded">Costa Norte</span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Levada 25 Fontes</h3>
+                            <p class="text-sm text-slate-500 mb-4">Trilho pela Laurissilva até às cascatas.</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span class="text-brand-blue font-bold">Desde 35€</span>
+                                <a href="fazer_norte.html" class="text-sm bg-brand-blue text-white px-3 py-2 rounded-lg hover:bg-sky-600">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group hover:shadow-md transition-all">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/04/madeira-cabo-girao-pal.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Cabo Girão">
+                            <span class="absolute top-3 right-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">Costa Sul</span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Cabo Girão</h3>
+                            <p class="text-sm text-slate-500 mb-4">A famosa plataforma de vidro suspensa.</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span class="text-brand-blue font-bold">Desde 2€</span>
+                                <a href="fazer_sul.html" class="text-sm bg-brand-blue text-white px-3 py-2 rounded-lg hover:bg-sky-600">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group hover:shadow-md transition-all">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://photos.smugmug.com/Madeira-Lovers/Porto-Santo/7d-South-Porto-Santo/i-mtfdfw8/2/FXrj4JjzF3MSgTnFJHPSDdrqf75bZGs4HZzqf4DgL/L/Porto_Santo-7183878-L.jpg" alt="porto santo">  
+                            <span class="absolute top-3 right-3 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Porto Santo</span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2">Autocarro Turístico</h3>
+                            <p class="text-sm text-slate-500 mb-4">Volta completa à ilha dourada.</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span class="text-brand-blue font-bold">Desde 50€</span>
+                                <a href="fazer_portosanto.html" class="text-sm bg-brand-blue text-white px-3 py-2 rounded-lg hover:bg-sky-600">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

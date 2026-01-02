@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - Visit Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#0EA5E9', dark: '#0F172A', accent: '#F59E0B', light: '#F8FAFC' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
+    
+    <div class="flex h-screen w-full">
+
+        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
+            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+                    VISIT<span class="text-brand-blue">MADEIRA</span>
+                </div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
+                <div><a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">Início (Dashboard)</a></div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
+                    <ul class="space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Dados Pessoais</a></li>
+                        <li><a href="geral_privacidade.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Privacidade</a></li>
+                        <li><a href="geral_ajuda.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3>
+                    <ul class="space-y-1">
+                        <li><a href="lugares_principais.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Principais Atrações</a></li>
+                        <li><a href="norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte</a></li>
+                        <li><a href="sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul</a></li>
+                        <li><a href="porto-santo.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo</a></li>
+                        <li><a href="funchal.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3>
+                    <ul class="space-y-1">
+                        <li><a href="fazer_melhores.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores Experiências</a></li>
+                        <li><a href="fazer_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte (Ativ.)</a></li>
+                        <li><a href="fazer_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul (Ativ.)</a></li>
+                        <li><a href="fazer_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo (Ativ.)</a></li>
+                        <li><a href="fazer_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital (Ativ.)</a></li>
+                    </ul>
+                </div>
+
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3><ul class="space-y-1"><li><a href="insp_tendencias.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Tendências</a></li><li><a href="insp_lugares.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Gastronomia</a></li></ul></div>
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3><ul class="space-y-1"><li><a href="carrinho_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Carrinho</a></li><li><a href="favoritos_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Favoritos</a></li></ul></div>
+                <div><h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3><ul class="space-y-1"><li><a href="componentes.html" class="block px-3 py-2 text-sm text-brand-blue bg-blue-50 border border-blue-100 rounded-md font-medium">Ver Caderno Estilos</a></li></ul></div>
+            </nav>
+
+            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
+                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
+                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900 relative">
+            
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0 z-10 sticky top-0">
+                <a href="javascript:history.back()" class="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-brand-blue transition-colors">
+                    &larr; Voltar
+                </a>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-4 md:p-8">
+                <div class="max-w-6xl mx-auto w-full">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 h-96">
+                        <div class="md:col-span-2 h-full rounded-2xl overflow-hidden shadow-sm">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Funchal_Madeira_View.jpg" class="w-full h-full object-cover" alt="Funchal">
+                        </div>
+                        <div class="flex flex-col gap-4 h-full">
+                            <div class="h-1/2 rounded-2xl overflow-hidden shadow-sm">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Toboggan_Funchal.jpg" class="w-full h-full object-cover" alt="Cestos">
+                            </div>
+                            <div class="h-1/2 rounded-2xl overflow-hidden shadow-sm">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Mercado_dos_Lavradores_Funchal_2016.jpg" class="w-full h-full object-cover" alt="Mercado">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-10">
+                        
+                        <div class="flex-1 space-y-8">
+                            
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Capital &bull; Cultura</span>
+                                    <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-2 text-slate-900 dark:text-white">Tour Histórico no Funchal</h1>
+                                    <div class="flex items-center gap-2 text-sm">
+                                        <div class="flex text-yellow-400">★★★★★</div>
+                                        <span class="text-slate-500 font-medium">4.8 (124 avaliações)</span>
+                                    </div>
+                                </div>
+                                
+                                <button onclick="alert('Adicionado aos Favoritos! ❤️')" class="flex items-center gap-2 px-4 py-2 border border-slate-200 dark:border-slate-600 rounded-full text-slate-600 dark:text-slate-300 hover:bg-red-50 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                                    <span class="text-sm font-medium">Favoritos</span>
+                                </button>
+                            </div>
+
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                                Explore a história vibrante do Funchal. Começamos no colorido Mercado dos Lavradores, passamos pela Zona Velha com as suas portas pintadas e terminamos com a possibilidade de descer nos famosos cestos do Monte.
+                            </p>
+
+                            <div class="border-t border-slate-200 dark:border-slate-700 pt-8">
+                                <h3 class="text-xl font-bold mb-6 text-slate-800 dark:text-white">Itinerário</h3>
+                                <div class="space-y-6 relative border-l-2 border-slate-200 dark:border-slate-700 ml-3 pl-8 pb-2">
+                                    <div class="relative">
+                                        <div class="absolute -left-[39px] top-1 w-5 h-5 bg-brand-blue rounded-full border-4 border-white dark:border-slate-900"></div>
+                                        <h4 class="font-bold text-slate-800 dark:text-white">09:30 - Mercado dos Lavradores</h4>
+                                        <p class="text-sm text-slate-500">Ponto de encontro e prova de frutas exóticas.</p>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="absolute -left-[39px] top-1 w-5 h-5 bg-brand-blue rounded-full border-4 border-white dark:border-slate-900"></div>
+                                        <h4 class="font-bold text-slate-800 dark:text-white">10:30 - Zona Velha</h4>
+                                        <p class="text-sm text-slate-500">Caminhada pela Rua de Santa Maria e Forte de São Tiago.</p>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="absolute -left-[39px] top-1 w-5 h-5 bg-slate-300 rounded-full border-4 border-white dark:border-slate-900"></div>
+                                        <h4 class="font-bold text-slate-800 dark:text-white">12:00 - Fim do Tour</h4>
+                                        <p class="text-sm text-slate-500">Regresso ao centro.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border-t border-slate-200 dark:border-slate-700 pt-8">
+                                <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">O que está incluído?</h3>
+                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-600 dark:text-slate-300">
+                                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Guia Local Certificado</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Prova de Frutas</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Seguros Obrigatórios</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-t border-slate-200 dark:border-slate-700 pt-8 pb-8">
+                                <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">Outras Sugestões</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <a href="norte.html" class="flex gap-4 p-3 rounded-xl border border-slate-100 dark:border-slate-700 hover:shadow-md transition bg-white dark:bg-slate-800">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Levada_25_fontes.jpg" class="w-16 h-16 rounded-lg object-cover">
+                                        <div>
+                                            <h4 class="font-bold text-sm text-slate-800 dark:text-white">Levada 25 Fontes</h4>
+                                            <p class="text-xs text-slate-500">Costa Norte</p>
+                                        </div>
+                                    </a>
+                                    <a href="sul.html" class="flex gap-4 p-3 rounded-xl border border-slate-100 dark:border-slate-700 hover:shadow-md transition bg-white dark:bg-slate-800">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Tursiops_truncatus_01.jpg" class="w-16 h-16 rounded-lg object-cover">
+                                        <div>
+                                            <h4 class="font-bold text-sm text-slate-800 dark:text-white">Golfinhos</h4>
+                                            <p class="text-xs text-slate-500">Costa Sul</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-96">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 sticky top-24">
+                                <div class="flex justify-between items-end mb-6">
+                                    <div>
+                                        <p class="text-sm text-slate-500">Preço por pessoa</p>
+                                        <p class="text-3xl font-bold text-brand-blue">18€</p>
+                                    </div>
+                                    <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded">Disponível</span>
+                                </div>
+
+                                <form class="space-y-4" onsubmit="event.preventDefault();">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Data</label>
+                                        <input type="date" class="w-full p-3 border rounded-lg bg-slate-50 dark:bg-slate-900 dark:border-slate-600 dark:text-white outline-none focus:ring-2 focus:ring-brand-blue">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Participantes</label>
+                                        <select class="w-full p-3 border rounded-lg bg-slate-50 dark:bg-slate-900 dark:border-slate-600 dark:text-white outline-none focus:ring-2 focus:ring-brand-blue">
+                                            <option>1 Adulto</option>
+                                            <option>2 Adultos</option>
+                                            <option>3 Adultos</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <button onclick="alert('Reserva efetuada!')" class="w-full bg-brand-blue hover:bg-sky-600 text-white font-bold py-3 rounded-lg transition-all shadow-lg shadow-brand-blue/30 mt-2">
+                                        Reservar Agora
+                                    </button>
+
+                                    <button onclick="alert('Adicionado ao Carrinho! 🛒')" class="w-full bg-white dark:bg-slate-800 border-2 border-brand-blue text-brand-blue font-bold py-3 rounded-lg transition-all hover:bg-blue-50 dark:hover:bg-slate-700">
+                                        Adicionar ao Carrinho 🛒
+                                    </button>
+
+                                    <p class="text-xs text-center text-slate-400 mt-2">Cancelamento gratuito até 24h antes.</p>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

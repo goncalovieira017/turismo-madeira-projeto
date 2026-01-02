@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências - Visit Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#0EA5E9', dark: '#0F172A', accent: '#F59E0B', light: '#F8FAFC' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
+    
+    <div class="flex h-screen w-full">
+
+        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
+            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+                    VISIT<span class="text-brand-blue">MADEIRA</span>
+                </div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
+                <div><a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">Início (Dashboard)</a></div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
+                    <ul class="space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-3 py-2 bg-brand-blue/10 text-brand-blue font-bold rounded-md">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-md">Dados Pessoais</a></li>
+                        <li><a href="geral_privacidade.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-md">Privacidade</a></li>
+                        <li><a href="geral_ajuda.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-md">Ajuda</a></li>
+                    </ul>
+                </div>
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3><ul class="space-y-1"><li><a href="lugares_principais.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Principais Atrações</a></li><li><a href="norte.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Norte</a></li><li><a href="sul.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Sul</a></li><li><a href="porto-santo.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Porto Santo</a></li><li><a href="funchal.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Capital</a></li></ul></div>
+                 <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3><ul class="space-y-1"><li><a href="fazer_melhores.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Melhores Experiências</a></li><li><a href="fazer_norte.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Norte (Ativ.)</a></li><li><a href="fazer_sul.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Sul (Ativ.)</a></li><li><a href="fazer_portosanto.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Porto Santo (Ativ.)</a></li><li><a href="fazer_capital.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Capital (Ativ.)</a></li></ul></div>
+                 <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3><ul class="space-y-1"><li><a href="insp_tendencias.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Tendências</a></li><li><a href="insp_lugares.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Gastronomia</a></li></ul></div>
+                 <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3><ul class="space-y-1"><li><a href="carrinho_lista.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Carrinho</a></li><li><a href="favoritos_lista.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Favoritos</a></li></ul></div>
+                 <div><h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3><ul class="space-y-1"><li><a href="componentes.html" class="block px-3 py-2 text-sm text-brand-blue bg-blue-50 border border-blue-100 rounded-md font-medium">Ver Caderno Estilos</a></li></ul></div>
+            </nav>
+
+            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
+                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
+                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900">
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0">
+                <h2 id="pageTitle" class="text-xl font-bold text-slate-800 dark:text-white">Preferências do Sistema</h2>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-8">
+                <div class="max-w-2xl mx-auto bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 p-8">
+                    
+                    <form id="prefsForm" onsubmit="event.preventDefault(); aplicarPreferencias();">
+                        
+                        <div class="mb-8">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-white mb-2">Idioma / Language</label>
+                            <select id="langSelect" class="w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-700 dark:text-slate-200 focus:ring-2 focus:ring-brand-blue outline-none">
+                                <option value="pt">Português (PT)</option>
+                                <option value="en">English (EN)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-white mb-2">Tema da Aplicação</label>
+                            <div class="flex gap-4">
+                                <label class="flex items-center gap-2 p-3 border border-slate-200 dark:border-slate-600 rounded-lg cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700 w-1/2 has-[:checked]:border-brand-blue has-[:checked]:bg-blue-50 dark:has-[:checked]:bg-slate-700">
+                                    <input type="radio" name="tema" value="light" class="text-brand-blue focus:ring-brand-blue">
+                                    <span class="text-slate-700 dark:text-slate-200">Claro ☀️</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-3 border border-slate-200 dark:border-slate-600 rounded-lg cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700 w-1/2 has-[:checked]:border-brand-blue has-[:checked]:bg-blue-50 dark:has-[:checked]:bg-slate-700">
+                                    <input type="radio" name="tema" value="dark" class="text-brand-blue focus:ring-brand-blue">
+                                    <span class="text-slate-700 dark:text-slate-200">Escuro 🌙</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-white mb-2">Moeda de Pagamento</label>
+                            <select class="w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-700 dark:text-slate-200 focus:ring-2 focus:ring-brand-blue outline-none">
+                                <option value="eur">Euro (€)</option>
+                                <option value="usd">Dólar ($)</option>
+                            </select>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 dark:border-slate-700 text-right">
+                            <button type="submit" class="bg-brand-blue hover:bg-sky-600 text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-brand-blue/20 transition-all">
+                                Guardar Preferências
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function aplicarPreferencias() {
+           
+            const idioma = document.getElementById('langSelect').value;
+            const tema = document.querySelector('input[name="tema"]:checked').value;
+            
+           
+            if (tema === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+
+            
+            const title = document.getElementById('pageTitle');
+            if (idioma === 'en') {
+                title.innerText = "System Preferences (Saved!)";
+                alert("Settings Saved! Theme updated.");
+            } else {
+                title.innerText = "Preferências do Sistema (Guardado!)";
+                alert("Preferências Guardadas! Tema atualizado.");
+            }
+        }
+    </script>
+</body>
+</html>

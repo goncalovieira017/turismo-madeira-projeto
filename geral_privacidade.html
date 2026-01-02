@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidade - Visit Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#0EA5E9', dark: '#0F172A', accent: '#F59E0B', light: '#F8FAFC' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
+    
+    <div class="flex h-screen w-full">
+
+        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
+            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+                    VISIT<span class="text-brand-blue">MADEIRA</span>
+                </div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
+                <div><a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">Início (Dashboard)</a></div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
+                    <ul class="space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-md">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-md">Dados Pessoais</a></li>
+                        
+                        <li><a href="geral_privacidade.html" class="block px-3 py-2 bg-brand-blue/10 text-brand-blue font-bold rounded-md">Privacidade</a></li>
+                        
+                        <li><a href="geral_ajuda.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-md">Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3>
+                    <ul class="space-y-1">
+                        <li><a href="lugares_principais.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Principais Atrações</a></li>
+                        <li><a href="norte.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Norte</a></li>
+                        <li><a href="sul.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Sul</a></li>
+                        <li><a href="porto-santo.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Porto Santo</a></li>
+                        <li><a href="funchal.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Capital</a></li>
+                    </ul>
+                </div>
+
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3><ul class="space-y-1"><li><a href="fazer_melhores.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Melhores Experiências</a></li><li><a href="fazer_norte.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Norte (Ativ.)</a></li><li><a href="fazer_sul.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Costa Sul (Ativ.)</a></li><li><a href="fazer_portosanto.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Porto Santo (Ativ.)</a></li><li><a href="fazer_capital.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Capital (Ativ.)</a></li></ul></div>
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3><ul class="space-y-1"><li><a href="insp_tendencias.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Tendências</a></li><li><a href="insp_lugares.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Gastronomia</a></li></ul></div>
+                <div><h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3><ul class="space-y-1"><li><a href="carrinho_lista.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Carrinho</a></li><li><a href="favoritos_lista.html" class="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50">Favoritos</a></li></ul></div>
+                
+                <div><h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3><ul class="space-y-1"><li><a href="componentes.html" class="block px-3 py-2 text-sm text-brand-blue bg-blue-50 border border-blue-100 rounded-md font-medium">Ver Caderno Estilos</a></li></ul></div>
+            </nav>
+
+            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
+                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
+                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900">
+            
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0">
+                <h2 class="text-xl font-bold text-slate-800 dark:text-white">Definições de Privacidade</h2>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-8">
+                <div class="max-w-2xl mx-auto space-y-6">
+
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 text-brand-blue p-2 rounded-lg">🛡️</div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-slate-800 dark:text-white">Autorização de Dados Pessoais</h3>
+                                <p class="text-sm text-slate-500 mt-1 mb-4">Autorizo o tratamento dos meus dados para fins de gestão de reservas e personalização da experiência, conforme o RGPD.</p>
+                                
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="w-5 h-5 text-brand-blue rounded focus:ring-brand-blue border-gray-300">
+                                    <span class="ml-2 text-sm font-medium text-slate-700 dark:text-slate-300">Li e aceito os termos de tratamento de dados.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-purple-100 text-purple-600 p-2 rounded-lg">📧</div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-slate-800 dark:text-white">Comunicações por Email</h3>
+                                <p class="text-sm text-slate-500 mt-1 mb-4">Desejo receber novidades, descontos exclusivos e sugestões de roteiros no meu email.</p>
+                                
+                                <div class="space-y-2">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="checkbox" class="w-4 h-4 text-brand-blue rounded focus:ring-brand-blue border-gray-300">
+                                        <span class="ml-2 text-sm text-slate-600 dark:text-slate-400">Newsletter Semanal</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="checkbox" checked class="w-4 h-4 text-brand-blue rounded focus:ring-brand-blue border-gray-300">
+                                        <span class="ml-2 text-sm text-slate-600 dark:text-slate-400">Alertas de Atividades Favoritas</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-orange-100 text-orange-600 p-2 rounded-lg">🎓</div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-slate-800 dark:text-white">Lista Alumni UMa</h3>
+                                <p class="text-sm text-slate-500 mt-1 mb-4">Pertence à comunidade antiga da Universidade da Madeira? Junte-se à lista para benefícios especiais.</p>
+                                
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <div class="relative">
+                                        <input type="checkbox" class="sr-only peer">
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-brand-blue"></div>
+                                    </div>
+                                    <span class="ml-3 text-sm font-medium text-slate-900 dark:text-gray-300">Sim, quero aderir à Lista Alumni</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end pt-4">
+                        <button onclick="alert('Definições de privacidade atualizadas com sucesso!')" class="bg-brand-blue hover:bg-sky-600 text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-brand-blue/20 transition-all">
+                            Guardar Alterações
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
