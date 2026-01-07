@@ -19,136 +19,151 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>.scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-thin::-webkit-scrollbar { width: 4px; } .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }</style>
+    <style>
+        .scrollbar-thin::-webkit-scrollbar { width: 4px; } 
+        .scrollbar-thin::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 4px; }
+        .sidebar-scroll { -webkit-overflow-scrolling: touch; }
+    </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased overflow-hidden">
     
-    <div class="flex h-screen w-full">
+    <div class="flex h-[100dvh] w-full relative">
 
-        <aside class="w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col flex-shrink-0 z-50 h-full">
-            <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-700">
-                <div class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
-                    <span class="bg-brand-blue text-white rounded-lg w-8 h-8 flex items-center justify-center">M</span>
+        <aside id="sidebar" class="hidden md:flex fixed md:relative inset-y-0 left-0 z-50 w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex-col h-full transition-all">
+            
+            <div class="h-12 md:h-16 flex items-center justify-between px-4 md:px-6 border-b border-slate-100 dark:border-slate-700 flex-shrink-0">
+                <div class="flex items-center gap-2 font-bold text-lg md:text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="bg-brand-blue text-white rounded-lg w-6 h-6 md:w-8 md:h-8 flex items-center justify-center text-xs md:text-base">M</span>
                     VISIT<span class="text-brand-blue">MADEIRA</span>
                 </div>
+                <button onclick="document.getElementById('sidebar').classList.toggle('hidden')" class="md:hidden p-1 text-slate-500 hover:bg-slate-100 rounded-lg">✕</button>
             </div>
 
-            <nav class="flex-1 overflow-y-auto hover:overflow-y-auto scrollbar-thin p-4 space-y-8 text-sm">
-                <div><a href="index.html" class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">Início (Dashboard)</a></div>
+            <nav class="flex-1 overflow-y-auto sidebar-scroll min-h-0 scrollbar-thin p-2 md:p-4 pb-20 space-y-3 md:space-y-8 text-[11px] md:text-sm leading-tight">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-1 md:py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg font-medium transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 md:w-5 md:h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                        Início
+                    </a>
+                </div>
 
                 <div>
-                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Geral</h3>
-                    <ul class="space-y-1">
-                        <li><a href="geral_preferencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Preferências</a></li>
-                        <li><a href="geral_dados.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Dados Pessoais</a></li>
-                        <li><a href="geral_privacidade.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Privacidade</a></li>
-                        <li><a href="geral_ajuda.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Ajuda</a></li>
+                    <h3 class="px-2 md:px-3 text-[9px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5 md:mb-2">Geral</h3>
+                    <ul class="space-y-0.5 md:space-y-1">
+                        <li><a href="geral_preferencias.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Preferências</a></li>
+                        <li><a href="geral_dados.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Dados Pessoais</a></li>
+                        <li><a href="geral_privacidade.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Privacidade</a></li>
+                        <li><a href="geral_ajuda.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Ajuda</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Lugares para ver</h3>
-                    <ul class="space-y-1">
-                        <li><a href="lugares_principais.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Principais Atrações</a></li>
-                        <li><a href="lugares_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte</a></li>
-                        <li><a href="lugares_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul</a></li>
-                        <li><a href="lugares_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo</a></li>
-                        <li><a href="lugares_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital</a></li>
+                    <h3 class="px-2 md:px-3 text-[9px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5 md:mb-2">Lugares</h3>
+                    <ul class="space-y-0.5 md:space-y-1">
+                        <li><a href="lugares_principais.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Principais</a></li>
+                        <li><a href="lugares_norte.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte</a></li>
+                        <li><a href="lugares_sul.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul</a></li>
+                        <li><a href="lugares_portosanto.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo</a></li>
+                        <li><a href="lugares_capital.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Coisas para Fazer</h3>
-                    <ul class="space-y-1">
-                        <li><a href="fazer_melhores.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores Experiências</a></li>
-                        <li><a href="fazer_norte.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Norte (Ativ.)</a></li>
-                        <li><a href="fazer_sul.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Costa Sul (Ativ.)</a></li>
-                        <li><a href="fazer_portosanto.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Porto Santo (Ativ.)</a></li>
-                        <li><a href="fazer_capital.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital (Ativ.)</a></li>
+                    <h3 class="px-2 md:px-3 text-[9px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5 md:mb-2">Fazer</h3>
+                    <ul class="space-y-0.5 md:space-y-1">
+                        <li><a href="fazer_melhores.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores Exp.</a></li>
+                        <li><a href="fazer_norte.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Norte (Ativ.)</a></li>
+                        <li><a href="fazer_sul.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Sul (Ativ.)</a></li>
+                        <li><a href="fazer_portosanto.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">P. Santo (Ativ.)</a></li>
+                        <li><a href="fazer_capital.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Capital (Ativ.)</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Inspiração</h3>
-                    <ul class="space-y-1">
-                        <li><a href="insp_tendencias.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Tendências</a></li>
-                        <li><a href="insp_lugares.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores lugares</a></li>
-                        <li><a href="insp_festas.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Festas e Arraiais</a></li>
-                        <li><a href="insp_gastronomia.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Gastronomia</a></li>
-                        <li><a href="insp_trilhos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Trilhos e levadas</a></li>
-                        <li><a href="insp_natureza.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Natureza</a></li>
-                        <li><a href="insp_cultura.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Cultura</a></li>
-                        <li><a href="insp_desportos.html" class="block px-3 py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Desportos</a></li>
+                    <h3 class="px-2 md:px-3 text-[9px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5 md:mb-2">Inspiração</h3>
+                    <ul class="space-y-0.5 md:space-y-1">
+                        <li><a href="insp_tendencias.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Tendências</a></li>
+                        <li><a href="insp_lugares.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Melhores lugares</a></li>
+                        <li><a href="insp_festas.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Festas</a></li>
+                        <li><a href="insp_gastronomia.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Gastronomia</a></li>
+                        <li><a href="insp_trilhos.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Trilhos</a></li>
+                        <li><a href="insp_natureza.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Natureza</a></li>
+                        <li><a href="insp_cultura.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Cultura</a></li>
+                        <li><a href="insp_desportos.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Desportos</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Minha Viagem</h3>
-                    <ul class="space-y-1">
-                        <li><a href="carrinho_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Carrinho</a></li>
-                        <li><a href="favoritos_lista.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Favoritos</a></li>
-                        <li><a href="notif_updates.html" class="block px-3 py-1.5 text-slate-600 hover:bg-slate-50 dark:text-slate-300">Notificações</a></li>
+                    <h3 class="px-2 md:px-3 text-[9px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5 md:mb-2">Viagem</h3>
+                    <ul class="space-y-0.5 md:space-y-1">
+                        <li><a href="carrinho_lista.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Carrinho</a></li>
+                        <li><a href="favoritos_lista.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Favoritos</a></li>
+                        <li><a href="notif_updates.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">Notificações</a></li>
                         
-                        <li><a href="roteiro_realizar.html" class="block px-3 py-2 bg-brand-blue/10 text-brand-blue font-bold rounded-md">Meu Roteiro</a></li>
+                        <li><a href="roteiro_realizar.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 bg-brand-blue/10 text-brand-blue font-bold rounded-md text-[11px] md:text-sm">Meu Roteiro</a></li>
                     </ul>
                 </div>
-
+                
                 <div>
-                    <h3 class="px-3 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">Avaliação</h3>
-                    <ul class="space-y-1">
-                        <li><a href="componentes.html" class="block px-3 py-2 text-sm text-brand-blue bg-blue-50 border border-blue-100 rounded-md font-medium">Ver Caderno Estilos</a></li>
+                    <ul class="space-y-0.5 md:space-y-1">
+                        <li><a href="componentes.html" class="block px-2 md:px-3 py-0.5 md:py-1.5 rounded-md bg-blue-50 text-brand-blue border border-blue-100 font-bold text-[10px] md:text-xs">Estilos</a></li>
                     </ul>
                 </div>
             </nav>
 
-            <div class="p-4 border-t border-slate-200 dark:border-slate-700">
-                <a href="login.html" class="flex items-center gap-3 p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
-                    <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs">GV</div>
-                    <div class="text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo Vieira</p><p class="text-xs text-slate-500">Sair da Conta</p></div>
+            <div class="h-14 md:h-auto p-2 md:p-4 border-t border-slate-200 dark:border-slate-700 flex-shrink-0 bg-white dark:bg-slate-800">
+                <a href="login.html" class="flex items-center gap-2 md:gap-3 p-1 md:p-2 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors group">
+                    <div class="w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-[10px] md:text-xs">GV</div>
+                    <div class="text-[10px] md:text-sm"><p class="font-medium text-slate-700 dark:text-white">Gonçalo V.</p><p class="text-[9px] md:text-xs text-slate-500">Sair</p></div>
                 </a>
             </div>
         </aside>
 
-        <main class="flex-1 flex flex-col h-screen overflow-hidden bg-slate-50 dark:bg-slate-900">
-            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 flex-shrink-0">
-                <h2 class="text-xl font-bold text-slate-800 dark:text-white">Plano de Viagem</h2>
+        <main class="flex-1 flex flex-col h-[100dvh] overflow-hidden bg-slate-50 dark:bg-slate-900">
+            <header class="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-4 md:px-8 flex-shrink-0">
                 <div class="flex items-center gap-4">
-                    <button class="text-sm bg-brand-blue text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition shadow">Exportar PDF</button>
+                    <button onclick="document.getElementById('sidebar').classList.toggle('hidden')" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700">
+                        <svg class="w-6 h-6 text-slate-600 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                    <h2 class="text-xl font-bold text-slate-800 dark:text-white">Plano de Viagem</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="text-sm bg-brand-blue text-white px-3 md:px-4 py-2 rounded-lg hover:bg-sky-600 transition shadow hidden md:block">Exportar PDF</button>
                     <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
                 </div>
             </header>
 
-            <div class="flex-1 overflow-y-auto p-8 relative">
+            <div class="flex-1 overflow-y-auto p-4 md:p-8 relative">
                 
-                <div class="max-w-3xl mx-auto pl-8 border-l-2 border-brand-blue/30 relative">
+                <div class="max-w-3xl mx-auto pl-6 md:pl-8 border-l-2 border-brand-blue/30 relative">
                     
                     <div class="mb-12 relative">
-                        <div class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-brand-blue border-4 border-white dark:border-slate-900"></div>
+                        <div class="absolute -left-[33px] md:-left-[41px] top-0 w-6 h-6 rounded-full bg-brand-blue border-4 border-white dark:border-slate-900"></div>
                         
-                        <h3 class="text-2xl font-bold text-slate-800 dark:text-white mb-4">Dia 1 - Chegada & Funchal</h3>
+                        <h3 class="text-xl md:text-2xl font-bold text-slate-800 dark:text-white mb-4">Dia 1 - Chegada & Funchal</h3>
                         
-                        <div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 mb-4 flex gap-4">
-                            <div class="text-center min-w-[60px]">
-                                <span class="block text-xl font-bold text-slate-800 dark:text-white">14:00</span>
-                                <span class="text-xs text-slate-400">Check-in</span>
+                        <div class="bg-white dark:bg-slate-800 p-4 md:p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 mb-4 flex gap-4">
+                            <div class="text-center min-w-[50px] md:min-w-[60px]">
+                                <span class="block text-lg md:text-xl font-bold text-slate-800 dark:text-white">14:00</span>
+                                <span class="text-[10px] md:text-xs text-slate-400">Check-in</span>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-bold text-slate-700 dark:text-slate-200">Hotel no Funchal</h4>
-                                <p class="text-sm text-slate-500">Deixar as malas e descansar.</p>
+                                <p class="text-xs md:text-sm text-slate-500">Deixar as malas e descansar.</p>
                             </div>
                         </div>
 
-                        <div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex gap-4">
-                            <div class="text-center min-w-[60px]">
-                                <span class="block text-xl font-bold text-slate-800 dark:text-white">16:00</span>
-                                <span class="text-xs text-slate-400">Passeio</span>
+                        <div class="bg-white dark:bg-slate-800 p-4 md:p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex gap-4">
+                            <div class="text-center min-w-[50px] md:min-w-[60px]">
+                                <span class="block text-lg md:text-xl font-bold text-slate-800 dark:text-white">16:00</span>
+                                <span class="text-[10px] md:text-xs text-slate-400">Passeio</span>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-bold text-slate-700 dark:text-slate-200">Zona Velha e Teleférico</h4>
-                                <p class="text-sm text-slate-500 mb-3">Subida ao Monte e visita às Portas Pintadas.</p>
+                                <p class="text-xs md:text-sm text-slate-500 mb-3">Subida ao Monte e visita às Portas Pintadas.</p>
                                 <div class="h-32 w-full bg-gray-200 rounded-lg overflow-hidden relative">
-                                    <img src="COLA_AQUI_O_LINK_DA_IMAGEM" class="absolute inset-0 w-full h-full object-cover">
+                                    <img src="https://visit.funchal.pt/wp-content/uploads/2022/01/Leonor-S-7-1030x687.jpg" class="absolute inset-0 w-full h-full object-cover">
                                     <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs -z-10">FOTO: FUNCHAL</div>
                                 </div>
                             </div>
@@ -156,31 +171,31 @@
                     </div>
 
                     <div class="mb-12 relative">
-                        <div class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-brand-blue border-4 border-white dark:border-slate-900"></div>
+                        <div class="absolute -left-[33px] md:-left-[41px] top-0 w-6 h-6 rounded-full bg-brand-blue border-4 border-white dark:border-slate-900"></div>
                         
-                        <h3 class="text-2xl font-bold text-slate-800 dark:text-white mb-4">Dia 2 - Aventura no Norte</h3>
+                        <h3 class="text-xl md:text-2xl font-bold text-slate-800 dark:text-white mb-4">Dia 2 - Aventura no Norte</h3>
                         
-                        <div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 mb-4 flex gap-4">
-                            <div class="text-center min-w-[60px]">
-                                <span class="block text-xl font-bold text-slate-800 dark:text-white">09:00</span>
-                                <span class="text-xs text-slate-400">Tour</span>
+                        <div class="bg-white dark:bg-slate-800 p-4 md:p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 mb-4 flex gap-4">
+                            <div class="text-center min-w-[50px] md:min-w-[60px]">
+                                <span class="block text-lg md:text-xl font-bold text-slate-800 dark:text-white">09:00</span>
+                                <span class="text-[10px] md:text-xs text-slate-400">Tour</span>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-bold text-slate-700 dark:text-slate-200">Passeio 4x4 - Costa Norte</h4>
-                                <p class="text-sm text-slate-500">Pickup no Hotel. Rumo a São Vicente.</p>
+                                <p class="text-xs md:text-sm text-slate-500">Pickup no Hotel. Rumo a São Vicente.</p>
                             </div>
                         </div>
 
-                        <div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex gap-4">
-                            <div class="text-center min-w-[60px]">
-                                <span class="block text-xl font-bold text-slate-800 dark:text-white">13:00</span>
-                                <span class="text-xs text-slate-400">Almoço</span>
+                        <div class="bg-white dark:bg-slate-800 p-4 md:p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex gap-4">
+                            <div class="text-center min-w-[50px] md:min-w-[60px]">
+                                <span class="block text-lg md:text-xl font-bold text-slate-800 dark:text-white">13:00</span>
+                                <span class="text-[10px] md:text-xs text-slate-400">Almoço</span>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-bold text-slate-700 dark:text-slate-200">Porto Moniz</h4>
-                                <p class="text-sm text-slate-500 mb-3">Almoço com vista mar e mergulho nas piscinas.</p>
+                                <p class="text-xs md:text-sm text-slate-500 mb-3">Almoço com vista mar e mergulho nas piscinas.</p>
                                 <div class="h-32 w-full bg-gray-200 rounded-lg overflow-hidden relative">
-                                    <img src="COLA_AQUI_O_LINK_DA_IMAGEM" class="absolute inset-0 w-full h-full object-cover">
+                                    <img src="https://adventuremadeira.com/templates/yootheme/cache/de/skywalk-and-%20porto-moniz-volcanic-lava-pools-04-de62273f.jpeg" class="absolute inset-0 w-full h-full object-cover">
                                     <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs -z-10">FOTO: PORTO MONIZ</div>
                                 </div>
                             </div>
@@ -188,20 +203,20 @@
                     </div>
 
                     <div class="mb-12 relative">
-                        <div class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-brand-blue border-4 border-white dark:border-slate-900"></div>
+                        <div class="absolute -left-[33px] md:-left-[41px] top-0 w-6 h-6 rounded-full bg-brand-blue border-4 border-white dark:border-slate-900"></div>
                         
-                        <h3 class="text-2xl font-bold text-slate-800 dark:text-white mb-4">Dia 3 - Natureza e Partida</h3>
+                        <h3 class="text-xl md:text-2xl font-bold text-slate-800 dark:text-white mb-4">Dia 3 - Natureza e Partida</h3>
                         
-                        <div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex gap-4">
-                            <div class="text-center min-w-[60px]">
-                                <span class="block text-xl font-bold text-slate-800 dark:text-white">10:00</span>
-                                <span class="text-xs text-slate-400">Miradouro</span>
+                        <div class="bg-white dark:bg-slate-800 p-4 md:p-5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex gap-4">
+                            <div class="text-center min-w-[50px] md:min-w-[60px]">
+                                <span class="block text-lg md:text-xl font-bold text-slate-800 dark:text-white">10:00</span>
+                                <span class="text-[10px] md:text-xs text-slate-400">Miradouro</span>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-bold text-slate-700 dark:text-slate-200">Cabo Girão</h4>
-                                <p class="text-sm text-slate-500 mb-3">Visita rápida à plataforma de vidro antes de ir para o aeroporto.</p>
+                                <p class="text-xs md:text-sm text-slate-500 mb-3">Visita rápida à plataforma de vidro antes de ir para o aeroporto.</p>
                                 <div class="h-32 w-full bg-gray-200 rounded-lg overflow-hidden relative">
-                                    <img src="COLA_AQUI_O_LINK_DA_IMAGEM" class="absolute inset-0 w-full h-full object-cover">
+                                    <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/04/madeira-cabo-girao-pal.jpg" class="absolute inset-0 w-full h-full object-cover">
                                     <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs -z-10">FOTO: CABO GIRÃO</div>
                                 </div>
                             </div>
